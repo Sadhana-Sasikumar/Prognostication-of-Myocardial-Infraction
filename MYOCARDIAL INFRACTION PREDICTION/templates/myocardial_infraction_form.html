@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PROGNASTICATION OF MYOCARDIAL INFRACTION</title>
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PROGNASTICATION OF MYOCARDIAL INFRACTION</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #abb9c8;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff70;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+            color: #333;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><center>PROGNOSTICATION OF MYOCARDIAL INFRACTION</center></h1>
+    <form action="/predict" method="post">
+        
+        <label for="sex">Sex:</label>
+        <select id="sex" name="sex">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br><br>
+
+        <label for="AgeCategory">Age Category:</label>
+        <select id="AgeCategory" name="AgeCategory">
+            <option value="Above 50">Above 50</option>
+            <option value="Below 50">Below 50</option>
+        </select><br><br>
+
+        <label for="HadAngina">Had Angina:</label>
+        <select id="HadAngina" name="HadAngina">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="HadStroke">Had Stroke:</label>
+        <select id="HadStroke" name="HadStroke">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+         <label for="HadDiabetes">Had or Having Diabetes:</label>
+        <select id="HadDiabetes" name="HadDiabetes">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="TetanusLast10Tdap">Had TetanusLast10Tdap Vaccine:</label>
+        <select id="TetanusLast10Tdap" name="TetanusLast10Tdap">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="HadAsthma">Had Asthma:</label>
+        <select id="HadAsthma" name="HadAsthma">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="BlindOrVisionDifficulty">Do you feel any Difficulty in Your Vision:</label>
+        <select id="BlindOrVisionDifficulty" name= "BlindOrVisionDifficulty">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="DeafOrHardOfHearing">Do you feel Hard of Hearing:</label>
+        <select id="DeafOrHardOfHearing" name="DeafOrHardOfHearing">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+
+        <label for="DifficultyConcentrating">Do you feel any Discomfort while Concentrating:</label>
+        <select id="DifficultyConcentrating" name= "  DifficultyConcentrating">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for ="SmokingStatus">Do you Smoke:</label>
+        <select id="SmokingStatus" name="SmokingStatus">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="BMI">Select Your BMI:</label>
+        <select id="BMI" name="BMI">
+            <option value="UnderWeight">UnderWeight</option>
+            <option value="NormalWeight">NormalWeight</option>
+            <option value="OverWeight">OverWeight</option>
+        </select><br><br>
+       
+        <label for="Cholesterol">Select Your Cholesterol Level:</label>
+        <select id ="Cholesterol" name="Cholesterol">
+            <option value = "Normal">Normal</option>
+            <option value ="Borderline High">BorderlineHigh</option>
+            <option value ="High">High</option>
+        </select>
+
+        <label for="BP">Select Your Blood Pressure:</label>
+        <select id ="BP" name ="BP">
+            <option value = "Normal">Normal</option>
+            <option value = "Elevated">Elevated</option>
+            <option value = "High Stage 1">HighStage1</option>
+            <option value = "High Stage 2">HighStage2</option>
+        </select>
+
+
+       
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

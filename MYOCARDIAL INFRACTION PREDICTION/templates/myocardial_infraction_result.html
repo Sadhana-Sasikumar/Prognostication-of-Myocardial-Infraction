@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prognostication of Myocardial Infraction Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #abb9c8;
+            margin: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .high-risk {
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        .low-risk {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            display: block;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prognostication of Myocardial Infraction Result</h1>
+    <p>The predicted risk of Myocardial Infraction for the given patient record is: 
+        {% if prediction == 1 %}
+            <span class="high-risk">High</span>
+        {% else %}
+            <span class="low-risk">Low</span>
+        {% endif %}
+    </p>
+    <a href="/">Go back to the prediction form</a>
+</body>
+</html>
